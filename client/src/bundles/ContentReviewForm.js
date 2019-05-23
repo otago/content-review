@@ -7,13 +7,19 @@ import { loadComponent } from "lib/Injector";
 
 const FormBuilderModal = loadComponent("FormBuilderModal");
 
+const REACT_VERSION = React.version;
+
 /**
  * "Content due for review" modal popup. See AddToCampaignForm.js in
  * silverstripe/admin for reference.
  */
 jQuery.entwine("ss", $ => {
+  console.log("Fantastic it at leas gets here huh");
   /**
    * Kick off a "content due for review" dialog from the CMS actions.
+   */
+  /**
+   * 
    */
   $(".cms-content-actions .content-review__button").entwine({
     onclick(event) {
@@ -71,6 +77,8 @@ jQuery.entwine("ss", $ => {
       const sectionConfig = store
         .getState()
         .config.sections.find(section => section.name === sectionConfigKey);
+      console.log("sectionConfig => ", sectionConfig);
+      // The below Form ReviewContentForm is from an extension make sure it is added
       const modalSchemaUrl = `${
         sectionConfig.form.ReviewContentForm.schemaUrl
       }/${id}`;

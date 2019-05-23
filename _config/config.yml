@@ -1,6 +1,12 @@
 ---
 Name: otagocontentreviewextensions
 ---
+SilverStripe\Admin\LeftAndMain:
+  extensions:
+    - OP\ContentReview\Extensions\ContentReviewLeftAndMainExtension
+SilverStripe\CMS\Controllers\CMSPageEditController:
+  extensions:
+    - OP\ContentReview\Extensions\ContentReviewCMSExtension
 SilverStripe\SiteConfig\SiteConfig:
   extensions:
     - OP\ContentReview\Extensions\ContentReviewDefaultSettings

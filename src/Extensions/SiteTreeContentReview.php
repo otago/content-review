@@ -149,6 +149,7 @@ class SiteTreeContentReview extends DataExtension implements PermissionProvider
         }
         Requirements::css('otago/content-review:client/dist/styles/contentreview.css');
         // Requirements::javascript('otago/content-review:client/dist/js/contentreview.js');
+        Requirements::javascript('otago/content-review:client/dist/js/bundle.js');
         $reviewTab = LiteralField::create('ContentReviewButton', $this->owner->renderWith(__CLASS__ . '_button'));
         $actions->insertAfter('MajorActions', $reviewTab);
     }
