@@ -6,7 +6,7 @@ A useful skeleton to more easily create modules that conform to the
 ## Requirements
 
 -   SilverStripe ^4.0
--   [Yarn](https://yarnpkg.com/lang/en/), [NodeJS](https://nodejs.org/en/) (6.x) and [npm](https://npmjs.com) (for building
+-   [Yarn](https://yarnpkg.com/lang/en/), [NodeJS](https://nodejs.org/en/) (10.x) and [npm](https://npmjs.com) (for building
     frontend assets)
 -   Other module
 -   Other server requirement

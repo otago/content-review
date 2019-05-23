@@ -1,0 +1,17 @@
+---
+Name: otagocontentreviewextensions
+---
+SilverStripe\SiteConfig\SiteConfig:
+  extensions:
+    - OP\ContentReview\Extensions\ContentReviewDefaultSettings
+SilverStripe\CMS\Model\SiteTree:
+  extensions:
+    - OP\ContentReview\Extensions\SiteTreeContentReview
+# apply ContentReviewGroups
+SilverStripe\Security\Group:
+  extensions:
+    - OP\ContentReview\Extensions\ContentReviewOwner
+# apply ContentReviewUsers
+SilverStripe\Security\Member:
+  extensions:
+    - OP\ContentReview\Extensions\ContentReviewOwner
