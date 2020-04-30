@@ -24,7 +24,7 @@
   "author": "Otago Polytehnic Ltd",
   "license": "BSD-3-Clause",
   "dependencies": {
-    "jquery": "^3.2.1",
+    "jquery": "^3.5.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-redux": "^7.0.3",
